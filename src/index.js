@@ -7,10 +7,12 @@ app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
 app.use(require('./route/index'));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'app')));
 
 app.listen(3000, () => {
     console.log("server on port 3000");
 }
 
 );
+
+

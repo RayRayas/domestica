@@ -1,0 +1,50 @@
+input:invalid {
+   
+  }
+  
+  input:invalid:required {
+    
+  }
+
+  
+  input:valid {
+  
+  }
+
+  option:selected{
+      color: rgb(194, 189, 189);
+  }
+
+
+
+
+  #rangeValue {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    color: #999;
+    font-weight: 20;
+  }
+  .range {
+    width: 200px;
+    height: 10px;
+    -webkit-appearance: none;
+    background: rgb(160, 160, 160);
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgb(172, 172, 172);
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(0, 179, 206);
+    cursor: pointer;
+    border: 4px solid rgb(255, 255, 255);
+    box-shadow: -407px 0 0 400px rgb(0, 179, 206);;
+  }
+  
+  
