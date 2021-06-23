@@ -22,12 +22,13 @@ input:invalid {
     position: relative;
     display: block;
     text-align: center;
-    font-size: 3em;
-    color: #999;
-    font-weight: 20;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-weight: 15;
+    
   }
   .range {
-    width: 200px;
+    width: 80%;
     height: 10px;
     -webkit-appearance: none;
     background: rgb(160, 160, 160);
@@ -48,3 +49,14 @@ input:invalid {
   }
   
   
+  selectorRange {
+    
+      margin-right: 10px;
+      
+      width: 100%;
+
+  }
+
+  rangos {
+      width: 100%;
+  }
