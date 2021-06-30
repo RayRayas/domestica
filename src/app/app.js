@@ -19,38 +19,62 @@ var dia = fechado.getDate();
 var ano = fechado.getFullYear(); 
 var ano2= ano + 1;
 var dia2 = dia + 1;
-var mes0 = "0" + mes;
+
 var tomorrow = fechado.getDate()+1;
+const mesCero = function suma() {
+  if (mes < 10 )
+      mes = '0' + mes  ;
+}
   
 
         //    Fijamos fechas 
 window.onload = function (){
-     if (mes < 10)
-        mes = '0' + mes;
-     if(dia<10)
-        dia='0'+dia;                        
+    //  if (mes < 10)
+    //     mes = '0' + mes;
+    //  if(dia<10)
+    //     dia='0'+dia;  
+                             
                         document.getElementById('fecha').min=ano+"-"+mes+"-"+dia;
                         document.getElementById('fecha').max=ano2+"-01-31";
                   return mes;
                   return dia;
                       }
                       
+                      var mes0 =  mes;
 let mesesA = mes;
 var servExp = document.getElementById("fecha");
 servExp.addEventListener("change", validaExp, false);
-let fechaC = ano+"-"+mes0+"-"+dia;
-var manana = ano+"-"+mes0+"-"+tomorrow;
+function fechaDias() {
+ 
+    if(dia<10)
+       dia='0'+dia; 
+  
+};
+dias = fechaDias();
+function fechaMeses() {
+  if (mes < 10)
+  mes = '0' + mes;
+  
+}
+meses = fechaMeses();
+
+let fechaC = ano+"-"+mes+"-"+dia;
+var manana = ano+"-"+mes+"-"+tomorrow;
 
         //   Validamos el dia si el servicio es hoy o mañana
-function validaExp () {                    
+function validaExp () {   
+
      if (servExp.value == fechaC) {
            document.getElementById('express').innerHTML = "<option >4hrs $430</option><option >5hrs $525</option><option >6hrs $615</option><option >7hrs $695</option><option >8hrs $785</option>";
           } 
      else if (servExp.value ==  manana )
            document.getElementById('express').innerHTML = "<option >4hrs $430</option><option >5hrs $525</option><option >6hrs $615</option><option >7hrs $695</option><option >8hrs $785</option>";
+     
      else 
            document.getElementById("express").innerHTML = "<option >4hrs $390</option><option >5hrs $475</option><option >6hrs $540</option><option >7hrs $630</option><option >8hrs $720</option>";
  };
+
+
 
 
 //  Cambio de hora
