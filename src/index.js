@@ -9,8 +9,8 @@ app.use(express.json());
 app.use(require('./route/index'));
 app.use(express.static(path.join(__dirname, 'app')));
 
-app.listen(3000, () => {
-    console.log("server on port 3000");
+app.listen(process.env.PORT || 5000, () => {
+    console.log("server on port el que sea");
 }
 
 );
