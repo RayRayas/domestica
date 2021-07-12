@@ -52,7 +52,8 @@ router.post('/email', async(req,res) => {
 
     const info = await transporter.sendMail ({
         from: "'Domestica tu aliada' <webmaster@domesticatualiada.com>",
-        to: 'spadilla2003@yahoo.com, domesticamx@gmail.com ', 
+        // to: 'spadilla2003@yahoo.com, domesticamx@gmail.com ', 
+        to: 'rayas..duran@gmail.com',
         subject: 'Nueva Cita',
         html: contentHTMML,
 
