@@ -9,24 +9,25 @@ router.post('/email', async(req,res) => {
     
     contentHTMML = `
 
-    <h1> Domestica Tu Aliada </h1>
+    <h1> Doméstica Tu Aliada </h1>
     <h2> Nueva Cita Generada </h2>
-    <h3>Esta es la informacion ingresada por el cliente</h3>
+    <h3>Esta es la información ingresada por el cliente</h3>
     <ul>
     <li>Nombre: ${nombre} </li>
     <li>Mail: ${mail} </li>
     <li>Teléfono : ${telefono} </li>
     <li>Ciudad: ${ciudad} </li>
-    <li>Dirección: ${direccion, colonia} </li>
+    <li>Dirección: ${direccion} </li>
+    <li>Colonia: ${colonia} </li>
     <li>Tipo: ${tipo} </li>
     <li>Cuartos: ${cuartos} </li>
     <li>Baños: ${banos} </li>
     <li>Fecha: ${fecha} </li>
     <li>Hora: ${hora} </li>
     <li>Cuantas horas: ${horas}</li>
-    <li>¿Como entrara?: ${entrada} </li>
+    <li>¿Cámo entrará?: ${entrada} </li>
     <li>Mascotas: ${mascotas} </li>
-    <li>Limliieza: ${limpieza} </li>
+    <li>Limpieza: ${limpieza} </li>
     <li>Lavado: ${Lavado} </li>
     <li>Planchado: ${planchado} </li>
     <li>Cocina: ${cocina} </li>
