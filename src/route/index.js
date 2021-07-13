@@ -25,7 +25,7 @@ router.post('/email', async(req,res) => {
     <li>Fecha: ${fecha} </li>
     <li>Hora: ${hora} </li>
     <li>Cuantas horas: ${horas}</li>
-    <li>¿Cámo entrará?: ${entrada} </li>
+    <li>¿Cómo entrará?: ${entrada} </li>
     <li>Mascotas: ${mascotas} </li>
     <li>Limpieza: ${limpieza} </li>
     <li>Lavado: ${Lavado} </li>
@@ -53,8 +53,8 @@ router.post('/email', async(req,res) => {
 
     const info = await transporter.sendMail ({
         from: "'Domestica tu aliada' <webmaster@domesticatualiada.com>",
-        // to: 'spadilla2003@yahoo.com, domesticamx@gmail.com ', 
-        to: "afishegrafico@hotmail.com, rayas.duran@gmail.com",
+        to: 'spadilla2003@yahoo.com, domesticamx@gmail.com ', 
+        // to: "afishegrafico@hotmail.com, rayas.duran@gmail.com",
   
         subject: 'Nueva Cita',
         html: contentHTMML,
