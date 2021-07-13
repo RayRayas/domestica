@@ -13,10 +13,10 @@ router.post('/email', async(req,res) => {
     <h2> Nueva Cita Generada </h2>
     <h3>Esta es la informacion ingresada por el cliente</h3>
     <ul>
-    <li>nombre: ${nombre} </li>
-    <li>mail: ${mail} </li>
-    <li>telefono: ${telefono} </li>
-    <li>ciudad: ${ciudad} </li>
+    <li>Nombre: ${nombre} </li>
+    <li>Mail: ${mail} </li>
+    <li>Teléfono : ${telefono} </li>
+    <li>Ciudad: ${ciudad} </li>
     <li>Dirección: ${direccion, colonia} </li>
     <li>Tipo: ${tipo} </li>
     <li>Cuartos: ${cuartos} </li>
@@ -53,7 +53,8 @@ router.post('/email', async(req,res) => {
     const info = await transporter.sendMail ({
         from: "'Domestica tu aliada' <webmaster@domesticatualiada.com>",
         // to: 'spadilla2003@yahoo.com, domesticamx@gmail.com ', 
-        to: 'rayas.duran@gmail.com',
+        to: "afishegrafico@hotmail.com, rayas.duran@gmail.com"
+  
         subject: 'Nueva Cita',
         html: contentHTMML,
 
