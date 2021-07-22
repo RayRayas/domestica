@@ -34,7 +34,7 @@ window.onload = function (){
     //  if(dia<10)
     //     dia='0'+dia;  
                              
-                        document.getElementById('fecha').min=ano+"-"+mes+"-"+dia;
+                        document.getElementById('fecha').min=ano+"-"+mes+"-"+dia2;
                         document.getElementById('fecha').max=ano2+"-01-31";
                   return mes;
                   return dia;

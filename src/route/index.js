@@ -20,7 +20,7 @@ router.post('/email', async(req,res) => {
     <li>Dirección: ${direccion} </li>
     <li>Colonia: ${colonia} </li>
     <li>Tipo: ${tipo} </li>
-    <li>Cuartos: ${cuartos} </li>
+    <li>Habitaciones: ${cuartos} </li>
     <li>Baños: ${banos} </li>
     <li>Fecha: ${fecha} </li>
     <li>Hora: ${hora} </li>
