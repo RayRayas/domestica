@@ -17,7 +17,7 @@ var dia = fechado.getDate();
 var ano = fechado.getFullYear(); 
 var ano2= ano + 1;
 var dia2 = dia + 1;
-var tomorrow = fechado.getDate()+(24 * 60 * 60 * 1000);
+var tomorrow = fechado.getDate()+(1);
 var mes0 =  mes;
 let mesesA = mes;
 var servExp = document.getElementById("fecha");
@@ -94,12 +94,13 @@ function validaExp () {
            document.getElementById('express').innerHTML = "<option >4hrs $430</option><option >5hrs $525</option><option >6hrs $615</option><option >7hrs $695</option><option >8hrs $785</option>";
        
       //  Precios y horarios para el dia de mañana cambiando precio segun la hora
-          } else if ( servExp.value == tomorrows) { 
+          } 
+          else if ( servExp.value == manana) { 
 
             document.getElementById('express').innerHTML = "<option >4hrs $430</option><option >5hrs $525</option><option >6hrs $615</option><option >7hrs $695</option><option >8hrs $785</option>";
 
             }
-            else if (servExp.value > manana) {
+            else if ( servExp.value >=  manana) {
               document.getElementById('express').innerHTML = "<option >4hrs $390</option><option >5hrs $475</option><option >6hrs $540</option><option >7hrs $630</option><option >8hrs $720</option>"; 
 
             }
