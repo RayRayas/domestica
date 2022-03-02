@@ -18,6 +18,14 @@ var ano = fechado.getFullYear();
 var ano2= ano + 1;
 var dia2 = dia + 1;
 var tomorrow = fechado.getDate()+(1);
+function tomorrowmañana (){
+  if (tomorrow<10)
+          tomorrow = '0' + tomorrow;
+}
+  magnana = tomorrowmañana();
+  
+
+
 var mes0 =  mes;
 let mesesA = mes;
 var servExp = document.getElementById("fecha");
